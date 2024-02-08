@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OPPATCH.######",
+ "creation": "2023-10-31 11:53:23.843921",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opportunity_id",
+  "time",
+  "section_break_lu3hd",
+  "attachment_url",
+  "document_type",
+  "column_break_4j7vu",
+  "type_of_proof",
+  "status",
+  "section_break_otzgp",
+  "document_status",
+  "ipv_status",
+  "e_sign_status",
+  "column_break_jihsf",
+  "document_remarks",
+  "ipv_remarks",
+  "e_sign_remarks",
+  "section_break_e33as",
+  "latitude",
+  "attachment_status",
+  "column_break_0flnh",
+  "longitude",
+  "attachment_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "opportunity_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opportunity Id",
+   "options": "Opportunity",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "attachment_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attachment URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "\nIPV\nPAN\nPhoto\nCANCELLED_CHEQUE_OR_STATEMENT\nINCOME_PROOF\nSIGNATURE\nESIGN_DOCUMENT\nPROTECTED_ESIGN_DOCUMENT\nADDITIONAL_DOCUMENT\nPOA\nCLIENT_PHOTO\nAADHAR_IMAGE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_of_proof",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type Of Proof",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nApproved\nRejected\nReset"
+  },
+  {
+   "fieldname": "document_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Document Status",
+   "options": "\nApproved\nRejected\nReset",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "ipv_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "IPV Status",
+   "options": "\nApproved\nRejected\nReset",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "e_sign_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "E-SIGN Status",
+   "options": "\nApproved\nRejected\nReset",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "document_remarks",
+   "fieldtype": "Data",
+   "label": "Document Remarks",
+   "mandatory_depends_on": "eval:doc.status == \"Rejected\"",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "ipv_remarks",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IPV Remarks",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "e_sign_remarks",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "E-SIGN Remarks",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_otzgp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jihsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_e33as",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "column_break_0flnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "section_break_lu3hd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4j7vu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment_status",
+   "fieldtype": "Select",
+   "label": "Attachment Status",
+   "options": "\nApproved\nRejected\nReset"
+  },
+  {
+   "fieldname": "attachment_remarks",
+   "fieldtype": "Data",
+   "label": "Attachment Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-20 12:23:13.806584",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Document Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

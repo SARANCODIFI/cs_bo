@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "HLD./.MM./.YY./.######",
+ "creation": "2023-09-11 20:01:33.277150",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc",
+  "symbol",
+  "qty",
+  "long_term",
+  "buy_avg",
+  "column_break_v9f3p",
+  "buy_value",
+  "pdc",
+  "present_value",
+  "pnl",
+  "pnl_change",
+  "pledged_qty",
+  "tags",
+  "section_break_v8lyu",
+  "holdings_breakdown",
+  "dividends"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Symbol"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "long_term",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Long Term Holdings",
+   "precision": "4"
+  },
+  {
+   "fieldname": "buy_avg",
+   "fieldtype": "Float",
+   "label": "Buy Avg",
+   "precision": "4"
+  },
+  {
+   "fieldname": "column_break_v9f3p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buy_value",
+   "fieldtype": "Float",
+   "label": "Buy Value",
+   "precision": "4"
+  },
+  {
+   "fieldname": "pdc",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "PDC",
+   "precision": "4"
+  },
+  {
+   "fieldname": "present_value",
+   "fieldtype": "Float",
+   "label": "Present Value"
+  },
+  {
+   "fieldname": "pnl",
+   "fieldtype": "Float",
+   "label": "P&L"
+  },
+  {
+   "fieldname": "pnl_change",
+   "fieldtype": "Float",
+   "label": "P&L Change"
+  },
+  {
+   "fieldname": "pledged_qty",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Pledged Qty"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tags"
+  },
+  {
+   "fieldname": "section_break_v8lyu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "holdings_breakdown",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Holdings Breakdown",
+   "options": "Holdings Breakdown"
+  },
+  {
+   "fieldname": "dividends",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Dividends",
+   "options": "Dividends"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-13 19:55:13.657157",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "holdings",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

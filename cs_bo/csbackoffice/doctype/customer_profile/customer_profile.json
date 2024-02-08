@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "CP.#####",
+ "creation": "2023-10-10 18:39:46.169502",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc_code",
+  "dp_id",
+  "bo_id",
+  "demat_id",
+  "fsl_from_opportunity",
+  "column_break0",
+  "active_status",
+  "legal_action_statement",
+  "annual_income",
+  "applicant_name",
+  "application_id",
+  "tab_break1",
+  "fatca",
+  "father_name",
+  "mother_name",
+  "gender",
+  "legal_action",
+  "marital_status",
+  "column_break1",
+  "net_worth",
+  "net_worth_date",
+  "political_exposure",
+  "settlement_cycle",
+  "tab_break2",
+  "standinginstructios",
+  "standing_instruction_one",
+  "standing_instruction_two",
+  "standing_instruction_three",
+  "standing_instruction_four",
+  "standing_instruction_five",
+  "cloumn_break3",
+  "standing_instruction_six",
+  "standing_instruction_seven",
+  "standing_instruction_eight",
+  "standing_instruction_nine",
+  "standing_instruction_ten",
+  "standing_instruction_eleven",
+  "standing_instruction_twelve",
+  "tab_break3",
+  "title",
+  "tax_outside_india",
+  "trading_experience",
+  "profile_status",
+  "profile_remarks",
+  "column_break_r42qs",
+  "occupation_code",
+  "occupation",
+  "income_code",
+  "income",
+  "trackwizz_passkey"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "UCC Code",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "dp_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "DP ID"
+  },
+  {
+   "fieldname": "bo_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "BO ID"
+  },
+  {
+   "fieldname": "demat_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Demat ID"
+  },
+  {
+   "fieldname": "active_status",
+   "fieldtype": "Int",
+   "label": "Active Status"
+  },
+  {
+   "fieldname": "legal_action_statement",
+   "fieldtype": "Data",
+   "label": "Legal Action Statement"
+  },
+  {
+   "fieldname": "annual_income",
+   "fieldtype": "Data",
+   "label": "Annual Income"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "application_id",
+   "fieldtype": "Float",
+   "label": "Application Id"
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_break1",
+   "fieldtype": "Tab Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "fatca",
+   "fieldtype": "Data",
+   "label": "Fatca"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "legal_action",
+   "fieldtype": "Data",
+   "label": "Legal Action"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital Status"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_worth",
+   "fieldtype": "Data",
+   "label": "Net Worth"
+  },
+  {
+   "fieldname": "net_worth_date",
+   "fieldtype": "Data",
+   "label": "Net Worth Date"
+  },
+  {
+   "fetch_from": "occupation_code.occupation",
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "political_exposure",
+   "fieldtype": "Data",
+   "label": "Political Exposure"
+  },
+  {
+   "fieldname": "settlement_cycle",
+   "fieldtype": "Data",
+   "label": "Settlement Cycle"
+  },
+  {
+   "fieldname": "tab_break2",
+   "fieldtype": "Tab Break",
+   "label": "Standing Instructios"
+  },
+  {
+   "fieldname": "standinginstructios",
+   "fieldtype": "Data",
+   "label": "Standing Instructios"
+  },
+  {
+   "fieldname": "standing_instruction_one",
+   "fieldtype": "Data",
+   "label": "Standing Instruction One"
+  },
+  {
+   "fieldname": "standing_instruction_two",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Two"
+  },
+  {
+   "fieldname": "standing_instruction_three",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Three"
+  },
+  {
+   "fieldname": "standing_instruction_four",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Four"
+  },
+  {
+   "fieldname": "standing_instruction_five",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Five"
+  },
+  {
+   "fieldname": "cloumn_break3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "standing_instruction_six",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Six"
+  },
+  {
+   "fieldname": "standing_instruction_seven",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Seven"
+  },
+  {
+   "fieldname": "standing_instruction_eight",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Eight"
+  },
+  {
+   "fieldname": "standing_instruction_nine",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Nine"
+  },
+  {
+   "fieldname": "standing_instruction_ten",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Ten"
+  },
+  {
+   "fieldname": "standing_instruction_eleven",
+   "fieldtype": "Data",
+   "label": "Standin Instruction Eleven"
+  },
+  {
+   "fieldname": "standing_instruction_twelve",
+   "fieldtype": "Data",
+   "label": "Standing Instruction Twelve"
+  },
+  {
+   "fieldname": "tab_break3",
+   "fieldtype": "Tab Break",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "tax_outside_india",
+   "fieldtype": "Data",
+   "label": "Tax Outside India"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "trading_experience",
+   "fieldtype": "Data",
+   "label": "Trading Experience"
+  },
+  {
+   "fieldname": "fsl_from_opportunity",
+   "fieldtype": "Link",
+   "label": "From Opportunity",
+   "options": "Opportunity"
+  },
+  {
+   "fieldname": "profile_status",
+   "fieldtype": "Select",
+   "label": "Profile Status",
+   "options": "\nApproved\nRejected\nReset",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "profile_remarks",
+   "fieldtype": "Data",
+   "label": "Profile Remarks",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_r42qs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "occupation_code",
+   "fieldtype": "Link",
+   "label": "Occupation Code",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "income_code",
+   "fieldtype": "Link",
+   "label": "Income Code",
+   "options": "Income"
+  },
+  {
+   "fetch_from": "income_code.income",
+   "fieldname": "income",
+   "fieldtype": "Data",
+   "label": "Income "
+  },
+  {
+   "fieldname": "trackwizz_passkey",
+   "fieldtype": "Data",
+   "label": "TrackWizz Passkey"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-06 12:33:25.212591",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Customer Profile",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "ucc_code"
+}

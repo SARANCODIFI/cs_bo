@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-11 20:22:54.980111",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "qty",
+  "price",
+  "column_break_ssxzr",
+  "avg_days",
+  "pnl"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "column_break_ssxzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Avg (Days)"
+  },
+  {
+   "fieldname": "pnl",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "P&L"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-13 19:56:58.889877",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Holdings Breakdown",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

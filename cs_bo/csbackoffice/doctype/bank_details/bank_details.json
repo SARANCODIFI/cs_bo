@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "creation": "2023-08-28 11:25:48.314216",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc_code",
+  "application_id",
+  "bank_name",
+  "branch",
+  "bank_code",
+  "primary",
+  "column_break_wkovo",
+  "account_no",
+  "ifsc_code",
+  "micr_code",
+  "account_type",
+  "amended_from",
+  "bank_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc_code",
+   "fieldtype": "Link",
+   "label": "UCC Code",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "bank_code",
+   "fieldtype": "Data",
+   "label": "Bank Code"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch"
+  },
+  {
+   "fieldname": "column_break_wkovo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account No"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "micr_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MICR Code"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Select",
+   "label": "Account Type",
+   "options": "Current\nOthers\nSavings"
+  },
+  {
+   "default": "0",
+   "fieldname": "primary",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Primary"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Details",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "application_id",
+   "fieldtype": "Data",
+   "label": "Application Id"
+  },
+  {
+   "fieldname": "bank_status",
+   "fieldtype": "Data",
+   "label": "Bank Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-31 13:10:34.293692",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Bank Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

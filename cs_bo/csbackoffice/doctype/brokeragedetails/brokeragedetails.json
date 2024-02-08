@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BD.#####",
+ "creation": "2024-01-11 10:35:47.622653",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "own_code",
+  "ucc",
+  "exchange",
+  "vallan",
+  "egroup",
+  "dtoftran",
+  "token",
+  "symbol",
+  "column_break_ccdco",
+  "order_number",
+  "trade_number",
+  "quantity",
+  "buysell",
+  "market",
+  "net_rate",
+  "brokerage",
+  "turnover"
+ ],
+ "fields": [
+  {
+   "fetch_from": "ucc.fsl_own_code",
+   "fieldname": "own_code",
+   "fieldtype": "Data",
+   "label": "Own Code"
+  },
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UCC ",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Data",
+   "label": "Exchange"
+  },
+  {
+   "fieldname": "vallan",
+   "fieldtype": "Data",
+   "label": "Vallan"
+  },
+  {
+   "fieldname": "egroup",
+   "fieldtype": "Data",
+   "label": "Egroup"
+  },
+  {
+   "fieldname": "dtoftran",
+   "fieldtype": "Date",
+   "label": "dtoftran"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "label": "symbol"
+  },
+  {
+   "fieldname": "column_break_ccdco",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_number",
+   "fieldtype": "Data",
+   "label": "Order Number"
+  },
+  {
+   "fieldname": "trade_number",
+   "fieldtype": "Data",
+   "label": "Trade Number"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "buysell",
+   "fieldtype": "Data",
+   "label": "Buysell"
+  },
+  {
+   "fieldname": "market",
+   "fieldtype": "Data",
+   "label": "Market"
+  },
+  {
+   "fieldname": "net_rate",
+   "fieldtype": "Data",
+   "label": "Net Rate"
+  },
+  {
+   "fieldname": "brokerage",
+   "fieldtype": "Data",
+   "label": "Brokerage"
+  },
+  {
+   "fieldname": "turnover",
+   "fieldtype": "Data",
+   "label": "Turnover"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-31 10:22:01.352492",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "BrokerageDetails",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

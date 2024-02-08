@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "CL.YY.######",
+ "creation": "2023-10-12 13:07:00.100510",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tradingcode",
+  "dtoftran",
+  "voucher",
+  "drcr",
+  "damount",
+  "camount",
+  "entrycode",
+  "branchcode",
+  "column_break_5pb3a",
+  "exchange",
+  "booktype",
+  "vallan",
+  "bankreco",
+  "cheque",
+  "nproductcode",
+  "descript",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "dtoftran",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Dtoftran"
+  },
+  {
+   "fieldname": "voucher",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Voucher"
+  },
+  {
+   "fieldname": "tradingcode",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "drcr",
+   "fieldtype": "Data",
+   "label": "DrCr"
+  },
+  {
+   "fieldname": "damount",
+   "fieldtype": "Float",
+   "label": "damount"
+  },
+  {
+   "fieldname": "camount",
+   "fieldtype": "Float",
+   "label": "camount"
+  },
+  {
+   "fieldname": "entrycode",
+   "fieldtype": "Data",
+   "label": "entrycode"
+  },
+  {
+   "fieldname": "branchcode",
+   "fieldtype": "Data",
+   "label": "branchcode"
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Data",
+   "label": "exchange"
+  },
+  {
+   "fieldname": "booktype",
+   "fieldtype": "Data",
+   "label": "booktype"
+  },
+  {
+   "fieldname": "vallan",
+   "fieldtype": "Data",
+   "label": "vallan"
+  },
+  {
+   "fieldname": "bankreco",
+   "fieldtype": "Data",
+   "label": "bankreco"
+  },
+  {
+   "fieldname": "cheque",
+   "fieldtype": "Data",
+   "label": "cheque"
+  },
+  {
+   "fieldname": "nproductcode",
+   "fieldtype": "Data",
+   "label": "nproductcode"
+  },
+  {
+   "fieldname": "descript",
+   "fieldtype": "Small Text",
+   "label": "DESCRIPT"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "created_on"
+  },
+  {
+   "fieldname": "column_break_5pb3a",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 17:32:54.379979",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "customer_ledger",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tradingcode"
+}

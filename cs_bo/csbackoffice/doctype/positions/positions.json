@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "POS./.MM./.YY./.######",
+ "creation": "2023-09-11 20:37:16.821684",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc",
+  "symbol",
+  "type",
+  "date",
+  "qty",
+  "column_break_n3pfj",
+  "avg_price",
+  "pdc",
+  "pnl",
+  "pnl_change"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "label": "Symbol"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_n3pfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_price",
+   "fieldtype": "Float",
+   "label": "Avg Price"
+  },
+  {
+   "fieldname": "pdc",
+   "fieldtype": "Float",
+   "label": "PDC"
+  },
+  {
+   "fieldname": "pnl",
+   "fieldtype": "Float",
+   "label": "P&L"
+  },
+  {
+   "fieldname": "pnl_change",
+   "fieldtype": "Float",
+   "label": "P&L Change"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-13 19:56:58.575422",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "positions",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:funds {MM}-{#####}",
+ "creation": "2023-10-06 13:07:17.453269",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc",
+  "account_value",
+  "date",
+  "cash_balance",
+  "column_break_nwwjq",
+  "unsettled_credits",
+  "payin",
+  "colleteral_utilised",
+  "segment"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "label": "Ucc",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "account_value",
+   "fieldtype": "Currency",
+   "label": "Account Value"
+  },
+  {
+   "fieldname": "cash_balance",
+   "fieldtype": "Currency",
+   "label": "Cash Balance"
+  },
+  {
+   "fieldname": "unsettled_credits",
+   "fieldtype": "Currency",
+   "label": "unsettled Credits"
+  },
+  {
+   "fieldname": "payin",
+   "fieldtype": "Currency",
+   "label": "Payin"
+  },
+  {
+   "fieldname": "colleteral_utilised",
+   "fieldtype": "Currency",
+   "label": "Colleteral Utilised"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "segment"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_nwwjq",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-25 15:59:07.799196",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Funds",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

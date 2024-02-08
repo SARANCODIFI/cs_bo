@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FA.######",
+ "creation": "2023-09-05 14:54:21.512701",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_ucc_code",
+  "sub_account",
+  "h_name",
+  "sub_account_pan",
+  "sub_account_mobile_no",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_ucc_code",
+   "fieldtype": "Link",
+   "label": "Customer UCC Code",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sub_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Account's Client ID",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "sub_account.customer_name",
+   "fieldname": "h_name",
+   "fieldtype": "Data",
+   "label": "Sub Account Name"
+  },
+  {
+   "fieldname": "sub_account_pan",
+   "fieldtype": "Data",
+   "label": "Sub Account's PAN"
+  },
+  {
+   "fieldname": "sub_account_mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Account's Mobile No"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nAccepted\nRejected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-13 19:54:59.394617",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Family Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,297 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ONM.#####",
+ "creation": "2023-10-25 15:37:44.430150",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nominee_number",
+  "nominee_fname",
+  "nominee_lname",
+  "relationship",
+  "date_of_birth",
+  "percentage_allocation",
+  "mobile_number",
+  "pan",
+  "proof_id",
+  "proof_type",
+  "email_id",
+  "address",
+  "address_2",
+  "nominee_attch_url",
+  "city",
+  "state",
+  "pincode",
+  "proof",
+  "unique_id",
+  "customer_ucc_code",
+  "guardian_fname",
+  "guardian_lname",
+  "guardian_relationship",
+  "guardian_dob",
+  "guardian_pan",
+  "guardian_phone_no",
+  "guardian_email_id",
+  "guardian_address1",
+  "guardian_address2",
+  "guardian_city",
+  "guardian_state",
+  "guardian_pincode",
+  "guardian_proof_id",
+  "guardian_prooftype",
+  "guardian_attachment_url",
+  "guardian_active_status",
+  "nominee_status",
+  "nominee_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "nominee_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee Number"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relationship"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB"
+  },
+  {
+   "fieldname": "percentage_allocation",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percentage Allocation"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PAN"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "proof",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Proof"
+  },
+  {
+   "fieldname": "unique_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unique ID"
+  },
+  {
+   "fieldname": "customer_ucc_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer UCC Code",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "guardian_fname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian First Name"
+  },
+  {
+   "fieldname": "guardian_lname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Last Name"
+  },
+  {
+   "fieldname": "guardian_relationship",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Relationship"
+  },
+  {
+   "fieldname": "guardian_dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Guardian DOB"
+  },
+  {
+   "fieldname": "guardian_pan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian PAN"
+  },
+  {
+   "fieldname": "guardian_phone_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Phone no"
+  },
+  {
+   "fieldname": "guardian_email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian E-mail id"
+  },
+  {
+   "fieldname": "guardian_address1",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Guardian Address 1"
+  },
+  {
+   "fieldname": "guardian_address2",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Guardian Address 2"
+  },
+  {
+   "fieldname": "guardian_city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian City"
+  },
+  {
+   "fieldname": "guardian_state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian State"
+  },
+  {
+   "fieldname": "guardian_pincode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Pincode"
+  },
+  {
+   "fieldname": "guardian_proof_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Proof Id"
+  },
+  {
+   "fieldname": "guardian_prooftype",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Proof Type"
+  },
+  {
+   "fieldname": "guardian_attachment_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guardian Attachment url"
+  },
+  {
+   "default": "0",
+   "fieldname": "guardian_active_status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Guardian Active Status"
+  },
+  {
+   "fieldname": "nominee_fname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee First Name"
+  },
+  {
+   "fieldname": "nominee_lname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee Last Name"
+  },
+  {
+   "fieldname": "nominee_attch_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nominee Attachment URL"
+  },
+  {
+   "fieldname": "proof_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Proof ID"
+  },
+  {
+   "fieldname": "proof_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Proof Type"
+  },
+  {
+   "fieldname": "nominee_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nApproved\nRejected\nReset"
+  },
+  {
+   "fieldname": "nominee_remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-19 10:37:39.732156",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Opportunity Nominee Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

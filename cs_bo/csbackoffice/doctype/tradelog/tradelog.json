@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TL.MM.YY.#####",
+ "creation": "2023-09-12 18:54:09.154739",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc",
+  "segment",
+  "trade_date",
+  "qty",
+  "trade_segment"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Segment"
+  },
+  {
+   "fieldname": "trade_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trade Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "trade_segment",
+   "fieldtype": "Data",
+   "label": "Trade Segment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-13 19:55:18.901316",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "tradelog",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

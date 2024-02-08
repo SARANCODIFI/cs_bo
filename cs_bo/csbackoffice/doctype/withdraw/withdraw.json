@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WTD-{#####}",
+ "creation": "2023-09-05 12:00:02.211403",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "bank_account",
+  "ucc",
+  "withdraw_amount",
+  "mode_of_transfer",
+  "bank",
+  "column_break_mb8ga",
+  "time",
+  "withdrawal_status_code",
+  "reference_number",
+  "type",
+  "segment",
+  "reason"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Data",
+   "label": "Bank Account"
+  },
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "withdraw_amount",
+   "fieldtype": "Currency",
+   "label": "Withdraw Amount"
+  },
+  {
+   "fieldname": "column_break_mb8ga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "withdrawal_status_code",
+   "fieldtype": "Data",
+   "label": "Withdrawal Status Code"
+  },
+  {
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "fieldname": "mode_of_transfer",
+   "fieldtype": "Data",
+   "label": "Mode Of Transfer"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Data",
+   "label": "Bank"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "Segment"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-30 10:59:09.361003",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "withdraw",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

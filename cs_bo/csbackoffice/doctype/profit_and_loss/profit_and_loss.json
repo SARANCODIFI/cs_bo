@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PL./.MM./.YY./.######",
+ "creation": "2023-09-11 19:43:20.513182",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ucc",
+  "symbol",
+  "exchange",
+  "buy_date",
+  "sell_date",
+  "qty",
+  "buy_avg",
+  "buy_value",
+  "sell_avg",
+  "sell_value",
+  "realised_pnl",
+  "realised_pnl_pct",
+  "column_break_mvo35",
+  "unrealised_pnl",
+  "unrealised_pnl_pct",
+  "brokerage",
+  "ex_txn_crg",
+  "clearing_charges",
+  "cgst",
+  "sgst",
+  "igst",
+  "stt",
+  "sebi_turnover",
+  "stamp_duty",
+  "ipft",
+  "tags"
+ ],
+ "fields": [
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "label": "UCC",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "symbol",
+   "fieldtype": "Data",
+   "label": "Symbol"
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Data",
+   "label": "Exchange"
+  },
+  {
+   "fieldname": "buy_date",
+   "fieldtype": "Date",
+   "label": "Buy Date"
+  },
+  {
+   "fieldname": "sell_date",
+   "fieldtype": "Date",
+   "label": "Sell Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "buy_avg",
+   "fieldtype": "Float",
+   "label": "Buy Avg",
+   "precision": "4"
+  },
+  {
+   "fieldname": "buy_value",
+   "fieldtype": "Float",
+   "label": "Buy Value",
+   "precision": "4"
+  },
+  {
+   "fieldname": "sell_avg",
+   "fieldtype": "Float",
+   "label": "Sell Avg",
+   "precision": "4"
+  },
+  {
+   "fieldname": "sell_value",
+   "fieldtype": "Float",
+   "label": "Sell Value",
+   "precision": "4"
+  },
+  {
+   "fieldname": "realised_pnl",
+   "fieldtype": "Float",
+   "label": "Realised P&L",
+   "precision": "2"
+  },
+  {
+   "fieldname": "realised_pnl_pct",
+   "fieldtype": "Float",
+   "label": "Realised P&L %"
+  },
+  {
+   "fieldname": "column_break_mvo35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unrealised_pnl",
+   "fieldtype": "Float",
+   "label": "Unrealised P&L",
+   "precision": "4"
+  },
+  {
+   "fieldname": "unrealised_pnl_pct",
+   "fieldtype": "Float",
+   "label": "Unrealised P&L %",
+   "precision": "4"
+  },
+  {
+   "fieldname": "brokerage",
+   "fieldtype": "Float",
+   "label": "Brokerage"
+  },
+  {
+   "fieldname": "ex_txn_crg",
+   "fieldtype": "Float",
+   "label": "Exchange Transaction Charges"
+  },
+  {
+   "fieldname": "clearing_charges",
+   "fieldtype": "Float",
+   "label": "Clearing Charges"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Float",
+   "label": "Central GST"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Float",
+   "label": "State GST"
+  },
+  {
+   "fieldname": "igst",
+   "fieldtype": "Float",
+   "label": "Integrated GST"
+  },
+  {
+   "fieldname": "stt",
+   "fieldtype": "Float",
+   "label": "Securities Transaction Tax"
+  },
+  {
+   "fieldname": "sebi_turnover",
+   "fieldtype": "Float",
+   "label": "SEBI Turnover Fees"
+  },
+  {
+   "fieldname": "stamp_duty",
+   "fieldtype": "Float",
+   "label": "Stamp Duty"
+  },
+  {
+   "fieldname": "ipft",
+   "fieldtype": "Float",
+   "label": "IPFT"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Data",
+   "label": "Tags"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-13 19:56:58.375033",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Profit and Loss",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
