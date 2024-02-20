@@ -112,6 +112,7 @@ def put_customer_bank_details(data):
     fullstatus = []
 
     try:
+        frappe.errprint("New Bank")
         customer_datas = frappe.parse_json(data)
         message = "Ok"
 
@@ -133,29 +134,29 @@ def put_customer_bank_details(data):
                         # Update existing bank details
                         for j in customer_doc.fsl_bank_table:
                             if j.account_no == customer["account_no"] and j.ifsc_code == customer["ifsc_code"]:
-                                j.bank_name = customer["bank_name"]
-                                j.bank_code = customer["bank_code"]
-                                j.branch = customer["branch"]
-                                j.account_no = customer["account_no"]
-                                j.ifsc_code = customer["ifsc_code"]
-                                j.micr_code = customer["micr_code"]
-                                j.account_type = customer["account_type"]
-                                j.bank_status = customer["bank_status"]
-                                j.primary = customer["primary"]
+                                j.bank_name = customer["bank_name"] if customer["bank_name"] else None
+                                j.bank_code = customer["bank_code"] if customer["bank_code"] else None
+                                j.branch = customer["branch"] if customer["branch"] else None
+                                j.account_no = customer["account_no"] if customer["account_no"] else None
+                                j.ifsc_code = customer["ifsc_code"] if customer["ifsc_code"] else None
+                                j.micr_code = customer["micr_code"] if customer["micr_code"] else None
+                                j.account_type = customer["account_type"] if customer["account_type"] else None
+                                j.bank_status = customer["bank_status"] if customer["bank_status"] else None
+                                j.primary = customer["primary"] if customer["primary"] else None
                                 customer_doc.save()
                                 break
                     else:
                         # Append new bank details
                         customer_doc.append("fsl_bank_table", {
-                            "bank_name": customer["bank_name"],
-                            "bank_code": customer["bank_code"],
-                            "branch": customer["branch"],
-                            "account_no": customer["account_no"],
-                            "ifsc_code": customer["ifsc_code"],
-                            "micr_code": customer["micr_code"],
-                            "account_type": customer["account_type"],
-                            "bank_status": customer["bank_status"],
-                            "primary": customer["primary"],
+                            "bank_name": customer["bank_name"] if customer["bank_name"] else None,
+                            "bank_code": customer["bank_code"] if customer["bank_code"] else None,
+                            "branch": customer["branch"] if customer["branch"] else None,
+                            "account_no": customer["account_no"] if customer["account_no"] else None,
+                            "ifsc_code": customer["ifsc_code"] if customer["ifsc_code"] else None,
+                            "micr_code": customer["micr_code"] if customer["micr_code"] else None,
+                            "account_type": customer["account_type"] if customer["account_type"] else None,
+                            "bank_status": customer["bank_status"] if customer["bank_status"] else None,
+                            "primary": customer["primary"] if customer["primary"] else None,
                         })
                         customer_doc.save()
 

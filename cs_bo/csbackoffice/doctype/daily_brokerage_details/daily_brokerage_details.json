@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DB.######",
+ "creation": "2024-02-20 10:46:03.341671",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trade_date",
+  "branch_id",
+  "segment",
+  "ucc",
+  "zonal",
+  "vertical",
+  "nse_turn_over",
+  "bse_turn_over",
+  "column_break_lixve",
+  "tot_turn_over",
+  "nse_gross_brok",
+  "bse_gross_brok",
+  "tot_gross_brok",
+  "nse_net_brok",
+  "bse_net_brok",
+  "tot_net_brok"
+ ],
+ "fields": [
+  {
+   "fieldname": "trade_date",
+   "fieldtype": "Date",
+   "label": "Trade_Date"
+  },
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch_Id",
+   "options": "Branch",
+   "search_index": 1
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "Segment"
+  },
+  {
+   "fieldname": "ucc",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UCC",
+   "options": "Customer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "branch_id.fsl_zone",
+   "fieldname": "zonal",
+   "fieldtype": "Data",
+   "label": "Zone",
+   "search_index": 1
+  },
+  {
+   "fieldname": "vertical",
+   "fieldtype": "Data",
+   "label": "Vertical"
+  },
+  {
+   "fieldname": "nse_turn_over",
+   "fieldtype": "Data",
+   "label": "NSE_Turn_Over"
+  },
+  {
+   "fieldname": "bse_turn_over",
+   "fieldtype": "Data",
+   "label": "BSE_Turn_Over"
+  },
+  {
+   "fieldname": "column_break_lixve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tot_turn_over",
+   "fieldtype": "Data",
+   "label": "TOT_Turn_Over"
+  },
+  {
+   "fieldname": "nse_gross_brok",
+   "fieldtype": "Data",
+   "label": "NSE_GROSS_BROK"
+  },
+  {
+   "fieldname": "bse_gross_brok",
+   "fieldtype": "Data",
+   "label": "BSE_GROSS_BROK"
+  },
+  {
+   "fieldname": "tot_gross_brok",
+   "fieldtype": "Data",
+   "label": "TOT_GROSS_BROK"
+  },
+  {
+   "fieldname": "nse_net_brok",
+   "fieldtype": "Data",
+   "label": "NSE_NET_BROK"
+  },
+  {
+   "fieldname": "bse_net_brok",
+   "fieldtype": "Data",
+   "label": "BSE_NET_BROK"
+  },
+  {
+   "fieldname": "tot_net_brok",
+   "fieldtype": "Data",
+   "label": "TOT_NET_BROK"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-20 10:55:55.483824",
+ "modified_by": "Administrator",
+ "module": "CSBackOffice",
+ "name": "Daily_Brokerage_Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

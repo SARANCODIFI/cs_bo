@@ -4,9 +4,8 @@ from frappe import _
 from datetime import datetime, timedelta
 
 @frappe.whitelist(allow_guest=True)
-def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, branch=None, region_name=None, segment=None, token=None, symbol=None, type=None):
+def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, branch=None, region_code=None, segment=None, token=None, symbol=None, type=None):
     try:
-        frappe.errprint("get_brokerage_summary")
         empty = 1
         # filters = []
 
@@ -52,7 +51,7 @@ def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, bra
                     frappe.local.response["message"] = {
                         "status" : "Ok",
                         "zone" : zone,
-                        "brokerage_summary": brokerage_total
+                        "tradebook_summary": brokerage_total
                     }
                 else:
                     frappe.local.response["message"] = {
@@ -65,9 +64,9 @@ def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, bra
                         "error": "Branch Not Found For This zone"
                     }
         
-        if region_name:
+        if region_code:
             empty = 0
-            branches_in_zone = frappe.get_all("Branch", filters={"fsl_region_name": region_name}, pluck="name")
+            branches_in_zone = frappe.get_all("Branch", filters={"fsl_region_code": region_code}, pluck="name")
            
             if branches_in_zone:
 
@@ -83,18 +82,18 @@ def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, bra
                     
                     frappe.local.response["message"] = {
                         "status" : "Ok",
-                        "region_name" : region_name,
-                        "brokerage_summary": brokerage_total
+                        "region_code" : region_code,
+                        "tradebook_summary": brokerage_total
                     }
                 else:
                     frappe.local.response["message"] = {
                         "status" : "Not Ok",
-                        "error": "Customer Not Found For This region_name"
+                        "error": "Customer Not Found For This region_code"
                     }
             else:
                 frappe.local.response["message"] = {
                         "status" : "Not Ok",
-                        "error": "Branch Not Found For This region_name"
+                        "error": "Branch Not Found For This region_code"
                     }
             
         if branch:
@@ -112,8 +111,14 @@ def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, bra
                 frappe.local.response["message"] = {
                         "status" : "Ok",
                         "branch" : branch,
-                        "brokerage_summary": brokerage_total
+                        "tradebook_summary": brokerage_total
                     }
+            else :
+                frappe.local.response["message"] = {
+                        "status" : "Not Ok",
+                        "error": "Customer Not Found For This branch"
+                    }    
+            
             
         if ucc:
             brokerage_filters.append(["ucc", "=", ucc])
@@ -126,9 +131,9 @@ def get_tradebook_details(from_date=None, to_date=None, ucc=None, zone=None, bra
            
             frappe.local.response["message"] = {
                         "status" : "Ok",
-                        "brokerage_summary": brokerage_total
+                        "tradebook_summary": brokerage_total
                     }
 
     except Exception as e:
         
-        return {f"Error in get_brokerage_summary: {e}"}
+        return {f"Error in get_tradebook_summary: {e}"}

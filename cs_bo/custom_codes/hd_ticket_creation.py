@@ -16,12 +16,12 @@ def hd_ticket_creation(self, event):
             "description": description
         })
 
-        if frappe.db.exists("Customer", {'email' : raised_by}):
-            hd_ticket.customer = frappe.db.get_value('Customer', {'email':raised_by }, ['name'])
+        if frappe.db.exists("Customer", {'email_id' : raised_by}):
+            hd_ticket.customer = frappe.db.get_value('Customer', {'email_id':raised_by }, ['name'])
 
         if frappe.db.exists("Employee", {'user_id' : raised_by}):
             hd_ticket.employee = frappe.db.get_value('Employee', {'user_id':raised_by }, ['name'])
 
-        hd_ticket.insert(ignore_permissions=True)
+        hd_ticket.insert(ignore_permissions=True,ignore_mandatory=True)
         frappe.db.commit()
         frappe.errprint("HD Ticket updated")

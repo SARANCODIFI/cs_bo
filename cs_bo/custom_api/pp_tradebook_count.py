@@ -4,9 +4,8 @@ from frappe import _
 from datetime import datetime, timedelta
 
 @frappe.whitelist(allow_guest=True)
-def get_tradebook_count(from_date=None, to_date=None, ucc=None, zone=None, branch=None, region_name=None, segment=None, token=None, symbol=None, type=None, unique_ucc=None, unique_order_id=None):
+def get_tradebook_count(from_date=None, to_date=None, ucc=None, zone=None, branch=None, region_code=None, segment=None, token=None, symbol=None, type=None, unique_ucc=None, unique_order_id=None):
     try:
-        frappe.errprint("get_brokerage_summary")
         empty = 1
         # filters = []
 
@@ -68,9 +67,9 @@ def get_tradebook_count(from_date=None, to_date=None, ucc=None, zone=None, branc
                         "error": "Branch Not Found For This zone"
                     }
         
-        if region_name:
+        if region_code:
             empty = 0
-            branches_in_zone = frappe.get_all("Branch", filters={"fsl_region_name": region_name}, pluck="name")
+            branches_in_zone = frappe.get_all("Branch", filters={"fsl_region_code": region_code}, pluck="name")
            
             if branches_in_zone:
 
@@ -95,7 +94,7 @@ def get_tradebook_count(from_date=None, to_date=None, ucc=None, zone=None, branc
                 else:
                     frappe.local.response["message"] = {
                         "status" : "Not Ok",
-                        "error": "Customer Not Found For This region_name"
+                        "error": "Customer Not Found For This region_code"
                     }
             else:
                 frappe.local.response["message"] = {
@@ -123,6 +122,11 @@ def get_tradebook_count(from_date=None, to_date=None, ucc=None, zone=None, branc
                             "status" : "Ok",
                             "total_count": brokerage_total
                         }
+            else :
+                frappe.local.response["message"] = {
+                        "status" : "Not Ok",
+                        "error": "Customer Not Found For This branch"
+                    }
             
         if ucc:
             brokerage_filters.append(["ucc", "=", ucc])
